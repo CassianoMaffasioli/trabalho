@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Cassiano Maffasioli</title>
+</head>
+<body>
+    <h1>Aluno Cassiano Maffasioli</h1>
+
+<p>Meu nome é Cassiano Maffasioli, tenho 41 anos, sou enfermeiro, porém sempre tive interesse nesta área, por isso rersolvi fazer o curso e talvez um dia até migrar para esta área. Dentre minhas atividades favoritas:
+    <button id="Botao">"Clique para ver uma mensagem!"</button>
+    <p id="mensagem"></p>
+    <ul>Buscar novos conhecimentos</ul>
+    <ul>Desenvolver novas habilidades</ul>
+    <ul>Aproveitar momentos com a família</ul>
+    <!---Na sequencia imagens representativas-->
+    <img src="conhecimento.jpg" alt="Busca de novos conhecimentos" width="200">
+    <img src="habilidades.jpg" alt=" Busca de novas habilidades" width="200">
+    <img src="familia.jpg" alt="Aproveitar momentos em familia" width="200">
+
+<table border="1">
+    <caption>Países que gostaria de visitar </caption>
+
+    <th>Países</th>
+        <th>Imagem</th>
+        
+    </tr>
+    <tr>
+        <th>Italia</th>
+        <th><img src="italia.jpg" height="200"</th>
+ <tr>
+        <th>Estados Unidos</th>
+        <th><img src="EUA.jpg" height="200"</th>
+     <tr>
+        <th>China</th>
+        <th><img src="china.jpg" height="200"</th>
+</table>
+<table>
+    <td>Mais comandos para seu site:</td>
+    <td>
+    <a href="https://www.w3schools.com/">https://www.w3schools.com</a>
+    </td>
+    </table>
+    <style>
+        h1 {color:darkblue; text-align: center;}
+        body {background-color: lightgrey;}
+        p {font-size: 20px; text-align: justify; text-indent: 2em;}
+        ul {line-height: 1.5;}
+        img {border-radius: 50%; width: 200px; height: 200px;}
+        th, td {border: 1px solid black; padding: 8px; text-align: center;}
+        caption {font-size: 26px;} 
+        table {justify-self:flex-start;}
+        a:hover {background-color: greenyellow;}
+    </style>
+
+<script>
+    const botao = document.getElementById("Botao");
+    const mensagemDiv = document.getElementById("mensagem");
+    botao.addEventListener("click", function() {mensagemDiv.textContent = "O sucesso é a soma de pequenos esforços repetidos dia após dia.” Robert Collier"; mensagemDiv.style.marginTop = "10px";});
+</script>
+</body>
+</html>
